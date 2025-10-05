@@ -35,7 +35,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 ![vehice](img/sysblock.png)
 **Main functional blocks:**
 - **Sensor Block** Collects environmental data from sensors.
-- **Signal Processing & Control Block ** Processes sensor signals and makes control decisions.
+- **Signal Processing & Control Block** Processes sensor signals and makes control decisions.
 - **Display Data (Laptop)** Visualizes processed data for mapping and positioning.
 - **Transmission Block** Sends control commands to the vehicle for movement.
 ---
