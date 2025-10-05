@@ -85,12 +85,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 | Response time | < 50 ms |
 | Interface | Trigger / Echo |
 
-**Principle:**  
-Emits ultrasonic waves and measures the echo return time to calculate distance:  
-\[
-D(cm) = \frac{t_{echo}(\mu s)}{58}
-\]
-
+ 
 **Application:** Short-range obstacle detection and avoidance.
 
 ---
@@ -109,11 +104,6 @@ D(cm) = \frac{t_{echo}(\mu s)}{58}
 | Field of View (FoV) | ±25° |
 | Module size | 4.4 × 2.4 × 1.0 mm |
 
-**Principle:**  
-Measures the photon flight time to determine the distance:  
-\[
-D = \frac{c \times t_{TOF}}{2}
-\]
 
 **Application:** Precise distance sensing and 2D mapping.
 
@@ -151,12 +141,6 @@ Includes an internal **Digital Motion Processor (DMP)** for sensor fusion and fi
 | Response time | Instantaneous |
 | Debounce | Required (hardware or software) |
 
-**Principle:**  
-Generates quadrature pulses as the wheel rotates.  
-Counts pulses and compares A/B phase to determine **direction, velocity, and displacement**:  
-\[
-S = \frac{N_{pulses}}{CPR} \times \pi D
-\]
 
 **Application:** Wheel odometry and speed measurement.
 
