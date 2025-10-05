@@ -32,16 +32,14 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 ---
 
 ## System Block Diagram
-
+![vehice](img/sysblock.png)
 
 
 **Main functional blocks:**
-- **Sensor Block:** Collects environmental data such as distance, direction, and motion.  
-- **Control Unit:** Processes sensor data and executes navigation and obstacle avoidance algorithms.  
-- **Actuation Block:** Includes DC motors, servo motor, and driver (L298N).  
-- **Communication Block:** Transfers data to the PC for visualization and mapping.  
-- **Processing Block:** Performs SLAM or 2D mapping and displays results in real-time.  
-
+Sensor Block – Collects environmental data from sensors.
+Signal Processing & Control Block – Processes sensor signals and makes control decisions.
+Display Data (Laptop) – Visualizes processed data for mapping and positioning.
+Transmission Block – Sends control commands to the vehicle for movement.
 ---
 
 ## Motion Control Block Diagram
