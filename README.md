@@ -33,7 +33,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ## ⚙️ System Block Diagram
 
-![vehice](img/layer1.png)
+
 
 **Main functional blocks:**
 - **Sensor Block:** Collects environmental data such as distance, direction, and motion.  
@@ -46,7 +46,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ## 🚗 Motion Control Block Diagram
 
-*(Insert motion control block diagram image here)*
+![vehice](img/layer1.png)
 
 **Functions:**
 - Read wheel rotation and speed from the **encoder**.  
