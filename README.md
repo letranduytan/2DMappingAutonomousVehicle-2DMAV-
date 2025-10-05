@@ -8,7 +8,7 @@
 
 ![vehice](img/summary.png)
 
-## 💡 Project Idea
+## Project Idea
 
 In the era of **Industry 4.0**, mobile robotics and autonomous vehicles have become one of the most essential research areas.  
 These systems can **navigate, avoid obstacles, localize, and build maps (SLAM)** — all of which are foundational technologies for self-driving cars, logistics robots, and drones.
@@ -21,7 +21,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 1. Enable the robot to **move and navigate** autonomously.  
 2. **Detect and avoid obstacles** using ultrasonic and laser distance sensors.  
@@ -31,7 +31,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ---
 
-## ⚙️ System Block Diagram
+## System Block Diagram
 
 
 
@@ -44,7 +44,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ---
 
-## 🚗 Motion Control Block Diagram
+## Motion Control Block Diagram
 
 ![vehice](img/layer1.png)
 
@@ -56,7 +56,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ---
 
-## 🌍 Environmental Data Acquisition and Preprocessing Block Diagram
+## Environmental Data Acquisition and Preprocessing Block Diagram
 
 ![vehice](img/layer2.png)
 
@@ -70,7 +70,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ---
 
-## 🔧 Sensor Details
+## Sensor Details
 
 ### 1. **Ultrasonic Sensor – HC-SR04**
 
@@ -146,7 +146,7 @@ Includes an internal **Digital Motion Processor (DMP)** for sensor fusion and fi
 
 ---
 
-## 🧠 Conclusion
+## Conclusion
 
 The **Mobile Path-Finding Robot** integrates multiple sensors and embedded control techniques to simulate basic autonomous vehicle behavior:  
 - **Ultrasonic + Laser sensors:** Environment perception and obstacle avoidance.  
