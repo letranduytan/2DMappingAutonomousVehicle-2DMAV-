@@ -1,1 +1,1 @@
-![vehice](proteus/img/img.png)
+![vehice](img/img.png)
