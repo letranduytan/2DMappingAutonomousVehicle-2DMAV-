@@ -5,7 +5,7 @@ Each script visualizes the robot's path, orientation (Yaw angle), and how its mo
 
 ---
 
-## 📂 Files Overview
+## Files Overview
 
 ### `TWO_WHEEL_ROBOT_SIMULATION.m`
 - Basic simulation of a differential drive robot.
@@ -28,6 +28,7 @@ Each script visualizes the robot's path, orientation (Yaw angle), and how its mo
 - Output:
   - Blue line showing straight path
   - Flat Yaw vs Time graph
+  
 ![vehice](img/img4.png)
 ---
 
@@ -38,6 +39,7 @@ Each script visualizes the robot's path, orientation (Yaw angle), and how its mo
 - Output:
   - Fixed position on XY plane
   - Linear increase in Yaw angle over time
+  
 ![vehice](img/img3.png)
 ---
 
@@ -52,6 +54,7 @@ Each script visualizes the robot's path, orientation (Yaw angle), and how its mo
 - Output:
   - Wave-shaped trajectory
   - Yaw angle oscillating between ± values
+  
 ![vehice](img/img5.png)
 ---
 
@@ -63,10 +66,11 @@ Each script visualizes the robot's path, orientation (Yaw angle), and how its mo
   - Maze map (gray)
   - Blue line = traveled path
   - Red circle = robot position
+  
 ![vehice](img/img1.png)
 ---
 
-## ⚙️ How to Run
+## How to Run
 1. Open MATLAB.
 2. Place all `.m` files in the same working directory.
 3. Run any file, for example:
@@ -79,7 +83,7 @@ Each script visualizes the robot's path, orientation (Yaw angle), and how its mo
 
 ---
 
-## 🧠 Notes
+## Notes
 - Simulations use **pure kinematics** (no friction, dynamics, or slip).
 - You can modify:
   - `L` (wheel distance)
