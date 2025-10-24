@@ -6,7 +6,7 @@
 <a href="https://www.linkedin.com/in/l%C3%AA-tr%E1%BA%A7n-duy-t%C3%A2n-81112a23a/" target="_blank"><img src="https://img.shields.io/badge/Linkedin%20-%20%2300CCFF"></a>
 </p>
 
-![vehice](img/summarry02.png)
+![vehice](img/summary.png)
 
 ## Project Idea
 
