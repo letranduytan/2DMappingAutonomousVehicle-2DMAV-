@@ -42,7 +42,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ## Motion Control Block Diagram
 
-![vehice](img/layer1.png)
+![vehice](img/layer1_1.png)
 
 **Functions:**
 - Read wheel rotation and speed from the **encoder**.  
