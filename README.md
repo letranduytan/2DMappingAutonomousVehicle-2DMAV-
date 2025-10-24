@@ -41,9 +41,6 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 ---
 
 ## Motion Control Block Diagram
-
-![vehice](img/layer1_1.png)
-
 **Functions:**
 - Read wheel rotation and speed from the **encoder**.  
 - Receive obstacle information from **ultrasonic and laser sensors**.  
@@ -53,9 +50,6 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 ---
 
 ## Environmental Data Acquisition and Preprocessing Block Diagram
-
-![vehice](img/layer2_1.png)
-
 **Functions:**
 - Acquire data from **ultrasonic, laser, IMU, and encoder** sensors.  
 - Filter and calibrate signals (median and moving average filters).  
