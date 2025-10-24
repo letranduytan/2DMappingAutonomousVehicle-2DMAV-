@@ -62,5 +62,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 - Transmit processed data to the **computer** via Wi-Fi or UART.  
 - On the PC, perform:
   - **2D environment mapping.**  
-  - **Localization** of the robot based on encoder and IMU data.  
+  - **Localization** of the robot based on encoder and IMU data.
+---
+![vehice](img/fast.png)
 
