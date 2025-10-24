@@ -64,9 +64,3 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
   - **2D environment mapping.**  
   - **Localization** of the robot based on encoder and IMU data.  
 
----
-
-
-> “From raw sensor data to intelligent motion — a foundation for future autonomous robotics.”
-
----
