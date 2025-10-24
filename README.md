@@ -54,7 +54,7 @@ The **Mobile Path-Finding Robot** project aims to develop a **small-scale autono
 
 ## Environmental Data Acquisition and Preprocessing Block Diagram
 
-![vehice](img/layer2.png)
+![vehice](img/layer2_1.png)
 
 **Functions:**
 - Acquire data from **ultrasonic, laser, IMU, and encoder** sensors.  
