@@ -113,7 +113,6 @@ differential_drive_dynamics
 
 ---
 
-## ✍️ Author
+✍️ Author
 **Le Tran Duy Tan**  
-Robotics & Embedded Systems Researcher  
-📧 Contact: [Add your email or LinkedIn if desired]
+
