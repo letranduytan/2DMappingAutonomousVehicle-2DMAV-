@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MPU6050 3D Viewer</title>
+<style>
+    body { margin: 0; overflow: hidden; background: #111; color: white; font-family: Arial; }
+    #info {
+        position: absolute;
+        top: 10px; left: 10px;
+        background: rgba(0,0,0,0.5);
+        padding: 10px; border-radius: 5px;
+    }
+</style>
+</head>
+
+<body>
+<div id="info">
+    <h3>MPU6050 3D Status</h3>
+    <div>ax: <span id="ax">0</span></div>
+    <div>ay: <span id="ay">0</span></div>
+    <div>az: <span id="az">0</span></div>
+    <div>Roll: <span id="roll">0</span></div>
+    <div>Pitch: <span id="pitch">0</span></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+// === SETUP 3D ===
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.1, 1000);
+camera.position.z = 3;
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+// Cube
+const geometry = new THREE.BoxGeometry(1,1,1);
+const material = new THREE.MeshNormalMaterial();
+const cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+
+// === UPDATE FROM JSON ===
+async function updateMPU() {
+    try {
+        let res = await fetch("/data");
+        let data = await res.json();
+
+        // Update text values
+        document.getElementById("ax").textContent = data.ax;
+        document.getElementById("ay").textContent = data.ay;
+        document.getElementById("az").textContent = data.az;
+
+        // Convert to g
+        let ax = data.ax / 16384;
+        let ay = data.ay / 16384;
+        let az = data.az / 16384;
+
+        // Calculate angles
+        let roll  = Math.atan2(ay, az);
+        let pitch = Math.atan2(-ax, Math.sqrt(ay*ay + az*az));
+
+        // Update text
+        document.getElementById("roll").textContent  = (roll  * 180/Math.PI).toFixed(1);
+        document.getElementById("pitch").textContent = (pitch * 180/Math.PI).toFixed(1);
+
+        // Apply rotation to cube
+        cube.rotation.x = pitch;
+        cube.rotation.y = roll;
+    } catch(e) {
+        console.log("Waiting data...");
+    }
+
+    requestAnimationFrame(updateMPU);
+    renderer.render(scene, camera);
+}
+
+updateMPU();
+</script>
+
+</body>
+</html>
